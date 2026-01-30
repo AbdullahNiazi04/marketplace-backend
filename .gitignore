@@ -1,0 +1,36 @@
+# Frontend (Ignored in this backend repo)
+frontend/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Database
+data/
+*.sqlite
+*.sqlite-journal
+
+# Dependencies
+node_modules/
+
+# Build
+dist/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Test
+coverage/
