@@ -1,7 +1,7 @@
 import { pgTable, text, doublePrecision, timestamp, jsonb, uuid } from 'drizzle-orm/pg-core';
 import { sql } from 'drizzle-orm';
-import { users } from './users.schema';
-import { companies } from './companies.schema';
+import { users } from './users.schema.js';
+import { companies } from './companies.schema.js';
 
 // Order type for B2B/B2C distinction
 export const orderTypeEnum = ['B2C', 'B2B'] as const;

@@ -1,8 +1,8 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, HttpCode, HttpStatus, UseGuards } from '@nestjs/common';
 import { ApiTags, ApiOperation } from '@nestjs/swagger';
-import { CategoriesService } from './categories.service';
-import { CreateCategoryDto, UpdateCategoryDto } from './dto';
-import { RolesGuard, Roles, Public } from '../../common';
+import { CategoriesService } from './categories.service.js';
+import { CreateCategoryDto, UpdateCategoryDto } from './dto/index.js';
+import { RolesGuard, Roles, Public } from '../../common/index.js';
 
 @ApiTags('Categories')
 @Controller('categories')

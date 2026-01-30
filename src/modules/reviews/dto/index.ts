@@ -1,6 +1,6 @@
 import { IsString, IsOptional, IsEnum, IsNumber, IsArray, Min, Max } from 'class-validator';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
-import { reviewTargetTypeEnum } from '../../../db/schema/reviews.schema';
+import { reviewTargetTypeEnum } from '../../../db/schema/reviews.schema.js';
 
 export class CreateReviewDto {
     @ApiProperty({ enum: reviewTargetTypeEnum })

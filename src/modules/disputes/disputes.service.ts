@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { DisputesRepository } from './disputes.repository';
-import { CreateDisputeDto, UpdateDisputeDto } from './dto';
-import { Dispute } from '../../db/schema';
+import { DisputesRepository } from './disputes.repository.js';
+import { CreateDisputeDto, UpdateDisputeDto } from './dto/index.js';
+import { Dispute } from '../../db/schema/index.js';
 
 @Injectable()
 export class DisputesService {

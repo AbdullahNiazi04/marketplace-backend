@@ -1,6 +1,6 @@
 import { IsString, IsOptional, IsEnum, IsNumber, IsObject, IsEmail } from 'class-validator';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
-import { businessTypeEnum, paymentTermsEnum } from '../../../db/schema/companies.schema';
+import { businessTypeEnum, paymentTermsEnum } from '../../../db/schema/companies.schema.js';
 
 export class CreateCompanyDto {
     @ApiProperty({ example: 'Acme Corporation' })

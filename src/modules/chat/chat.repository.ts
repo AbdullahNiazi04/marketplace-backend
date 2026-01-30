@@ -1,10 +1,10 @@
 import { Injectable, Inject } from '@nestjs/common';
 import { eq, desc, and, or, lt, gt, sql, SQL } from 'drizzle-orm';
-import { DATABASE_CONNECTION } from '../../database/database.module';
+import { DATABASE_CONNECTION } from '../../database/database.module.js';
 import {
     conversations, Conversation, NewConversation,
     messages, Message, NewMessage
-} from '../../db/schema';
+} from '../../db/schema/index.js';
 
 @Injectable()
 export class ChatRepository {

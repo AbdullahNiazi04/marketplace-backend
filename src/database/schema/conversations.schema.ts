@@ -1,7 +1,7 @@
 import { pgTable, text, integer, timestamp, uuid } from 'drizzle-orm/pg-core';
 import { sql } from 'drizzle-orm';
-import { users } from './users.schema';
-import { listings } from './listings.schema';
+import { users } from './users.schema.js';
+import { listings } from './listings.schema.js';
 
 // Conversation status enum
 export const conversationStatusEnum = ['Active', 'Archived', 'Blocked'] as const;

@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException, ConflictException } from '@nestjs/common';
-import { CompaniesRepository } from './companies.repository';
-import { CreateCompanyDto, UpdateCompanyDto } from './dto';
-import { Company } from '../../db/schema';
+import { CompaniesRepository } from './companies.repository.js';
+import { CreateCompanyDto, UpdateCompanyDto } from './dto/index.js';
+import { Company } from '../../db/schema/index.js';
 
 @Injectable()
 export class CompaniesService {

@@ -1,7 +1,7 @@
 import { pgTable, text, timestamp, jsonb, uuid } from 'drizzle-orm/pg-core';
 import { sql } from 'drizzle-orm';
-import { orders } from './orders.schema';
-import { users } from './users.schema';
+import { orders } from './orders.schema.js';
+import { users } from './users.schema.js';
 
 // Dispute reason codes
 export const disputeReasonEnum = ['NotReceived', 'NotAsDescribed', 'Damaged', 'WrongItem', 'Other'] as const;

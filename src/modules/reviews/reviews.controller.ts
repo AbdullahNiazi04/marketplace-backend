@@ -1,7 +1,7 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, HttpCode, HttpStatus } from '@nestjs/common';
 import { ApiTags, ApiOperation } from '@nestjs/swagger';
-import { ReviewsService } from './reviews.service';
-import { CreateReviewDto, UpdateReviewDto, SellerResponseDto } from './dto';
+import { ReviewsService } from './reviews.service.js';
+import { CreateReviewDto, UpdateReviewDto, SellerResponseDto } from './dto/index.js';
 
 @ApiTags('Reviews')
 @Controller('reviews')

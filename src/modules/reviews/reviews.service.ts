@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
-import { ReviewsRepository } from './reviews.repository';
-import { CreateReviewDto, UpdateReviewDto, SellerResponseDto } from './dto';
-import { Review } from '../../db/schema';
+import { ReviewsRepository } from './reviews.repository.js';
+import { CreateReviewDto, UpdateReviewDto, SellerResponseDto } from './dto/index.js';
+import { Review } from '../../db/schema/index.js';
 
 @Injectable()
 export class ReviewsService {

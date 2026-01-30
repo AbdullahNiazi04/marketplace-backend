@@ -1,6 +1,6 @@
 import { IsString, IsOptional, IsEnum, IsNumber, IsArray, IsObject, Min, Max } from 'class-validator';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
-import { listingTypeEnum, customerTypeEnum } from '../../../db/schema/listings.schema';
+import { listingTypeEnum, customerTypeEnum } from '../../../db/schema/listings.schema.js';
 
 export class CreateListingDto {
     @ApiProperty()

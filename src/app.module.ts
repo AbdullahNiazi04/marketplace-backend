@@ -1,19 +1,19 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { APP_GUARD } from '@nestjs/core';
-import { DatabaseModule } from './database/database.module';
-import { AuthGuard } from './common/guards/auth.guard';
-import { UsersModule } from './modules/users/users.module';
-import { CompaniesModule } from './modules/companies/companies.module';
-import { CategoriesModule } from './modules/categories/categories.module';
-import { ListingsModule } from './modules/listings/listings.module';
-import { OrdersModule } from './modules/orders/orders.module';
-import { PaymentsModule } from './modules/payments/payments.module';
-import { ShippingModule } from './modules/shipping/shipping.module';
-import { DisputesModule } from './modules/disputes/disputes.module';
-import { ReviewsModule } from './modules/reviews/reviews.module';
-import { ChatModule } from './modules/chat/chat.module';
-import { AuthModule } from './modules/auth/auth.module';
+import { DatabaseModule } from './database/database.module.js';
+import { AuthGuard } from './common/guards/auth.guard.js';
+import { UsersModule } from './modules/users/users.module.js';
+import { CompaniesModule } from './modules/companies/companies.module.js';
+import { CategoriesModule } from './modules/categories/categories.module.js';
+import { ListingsModule } from './modules/listings/listings.module.js';
+import { OrdersModule } from './modules/orders/orders.module.js';
+import { PaymentsModule } from './modules/payments/payments.module.js';
+import { ShippingModule } from './modules/shipping/shipping.module.js';
+import { DisputesModule } from './modules/disputes/disputes.module.js';
+import { ReviewsModule } from './modules/reviews/reviews.module.js';
+import { ChatModule } from './modules/chat/chat.module.js';
+import { AuthModule } from './modules/auth/auth.module.js';
 
 @Module({
   imports: [

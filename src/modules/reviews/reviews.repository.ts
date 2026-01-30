@@ -1,7 +1,7 @@
 import { Injectable, Inject } from '@nestjs/common';
 import { eq, desc, and } from 'drizzle-orm';
-import { DATABASE_CONNECTION } from '../../database/database.module';
-import { reviews, Review, NewReview, reviewTargetTypeEnum } from '../../db/schema';
+import { DATABASE_CONNECTION } from '../../database/database.module.js';
+import { reviews, Review, NewReview, reviewTargetTypeEnum } from '../../db/schema/index.js';
 
 @Injectable()
 export class ReviewsRepository {

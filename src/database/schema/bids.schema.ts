@@ -1,7 +1,7 @@
 import { pgTable, doublePrecision, boolean, timestamp, uuid } from 'drizzle-orm/pg-core';
 import { sql } from 'drizzle-orm';
-import { auctions } from './auctions.schema';
-import { users } from './users.schema';
+import { auctions } from './auctions.schema.js';
+import { users } from './users.schema.js';
 
 export const bids = pgTable('bids', {
     bidId: uuid('bid_id').primaryKey().defaultRandom(),

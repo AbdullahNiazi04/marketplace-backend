@@ -1,13 +1,13 @@
 import { Controller, Get, Post, Body, Param, Query } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiQuery } from '@nestjs/swagger';
-import { ChatService } from './chat.service';
+import { ChatService } from './chat.service.js';
 import {
     StartConversationDto,
     SendMessageDto,
     GetConversationsQueryDto,
     GetMessagesQueryDto,
     MarkAsReadDto
-} from './dto';
+} from './dto/index.js';
 
 @ApiTags('Chat')
 @Controller('chat')

@@ -1,7 +1,7 @@
 import { sqliteTable, text, integer } from 'drizzle-orm/sqlite-core';
 import { sql } from 'drizzle-orm';
-import { orders } from './orders.schema';
-import { users } from './users.schema';
+import { orders } from './orders.schema.js';
+import { users } from './users.schema.js';
 
 // Review target types
 export const reviewTargetTypeEnum = ['Product', 'Seller'] as const;

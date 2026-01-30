@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { DisputesController } from './disputes.controller';
-import { DisputesService } from './disputes.service';
-import { DisputesRepository } from './disputes.repository';
+import { DisputesController } from './disputes.controller.js';
+import { DisputesService } from './disputes.service.js';
+import { DisputesRepository } from './disputes.repository.js';
 
 @Module({
     controllers: [DisputesController],

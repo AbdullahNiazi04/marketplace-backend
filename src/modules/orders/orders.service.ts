@@ -1,8 +1,8 @@
 import { Injectable, NotFoundException, BadRequestException, Inject, forwardRef } from '@nestjs/common';
-import { OrdersRepository } from './orders.repository';
-import { CreateOrderDto, UpdateOrderStatusDto } from './dto';
-import { Order, OrderItem } from '../../db/schema';
-import { ListingsService } from '../listings/listings.service';
+import { OrdersRepository } from './orders.repository.js';
+import { CreateOrderDto, UpdateOrderStatusDto } from './dto/index.js';
+import { Order, OrderItem } from '../../db/schema/index.js';
+import { ListingsService } from '../listings/listings.service.js';
 
 @Injectable()
 export class OrdersService {

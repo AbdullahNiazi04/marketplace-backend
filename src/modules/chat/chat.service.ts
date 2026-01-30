@@ -1,12 +1,12 @@
 import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
-import { ChatRepository } from './chat.repository';
+import { ChatRepository } from './chat.repository.js';
 import {
     StartConversationDto,
     SendMessageDto,
     GetConversationsQueryDto,
     GetMessagesQueryDto
-} from './dto';
-import { Conversation, Message } from '../../db/schema';
+} from './dto/index.js';
+import { Conversation, Message } from '../../db/schema/index.js';
 
 @Injectable()
 export class ChatService {

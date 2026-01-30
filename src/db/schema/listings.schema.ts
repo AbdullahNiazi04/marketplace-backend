@@ -1,7 +1,7 @@
 import { sqliteTable, text, integer, real } from 'drizzle-orm/sqlite-core';
 import { sql } from 'drizzle-orm';
-import { users } from './users.schema';
-import { categories } from './categories.schema';
+import { users } from './users.schema.js';
+import { categories } from './categories.schema.js';
 
 // Listing types
 export const listingTypeEnum = ['Auction', 'Fixed', 'B2BOnly'] as const;

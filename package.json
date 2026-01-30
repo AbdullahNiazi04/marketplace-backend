@@ -1,9 +1,10 @@
 {
-  "name": "Ecom",
+  "name": "ecom",
   "version": "0.0.1",
   "description": "Nizron Ecom Backend - Cache Bust 1",
   "author": "",
   "private": true,
+  "type": "module",
   "license": "UNLICENSED",
   "engines": {
     "node": "20.x"

@@ -1,6 +1,6 @@
 import { pgTable, text, doublePrecision, timestamp, jsonb, uuid } from 'drizzle-orm/pg-core';
 import { sql } from 'drizzle-orm';
-import { users } from './users.schema';
+import { users } from './users.schema.js';
 
 // Payout status
 export const payoutStatusEnum = ['Scheduled', 'Processing', 'Completed', 'Failed', 'Cancelled'] as const;

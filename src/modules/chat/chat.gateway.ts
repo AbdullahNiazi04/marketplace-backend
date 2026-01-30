@@ -9,8 +9,8 @@ import {
 } from '@nestjs/websockets';
 import { Server, Socket } from 'socket.io';
 import { Logger } from '@nestjs/common';
-import { ChatService } from './chat.service';
-import { WsSendMessageDto, WsTypingDto, WsMarkReadDto } from './dto';
+import { ChatService } from './chat.service.js';
+import { WsSendMessageDto, WsTypingDto, WsMarkReadDto } from './dto/index.js';
 
 /**
  * Chat WebSocket Gateway

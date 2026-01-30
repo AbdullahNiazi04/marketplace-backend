@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException, ConflictException } from '@nestjs/common';
-import { CategoriesRepository } from './categories.repository';
-import { CreateCategoryDto, UpdateCategoryDto } from './dto';
-import { Category } from '../../db/schema';
+import { CategoriesRepository } from './categories.repository.js';
+import { CreateCategoryDto, UpdateCategoryDto } from './dto/index.js';
+import { Category } from '../../db/schema/index.js';
 
 @Injectable()
 export class CategoriesService {

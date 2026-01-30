@@ -1,6 +1,6 @@
 import { IsString, IsOptional, IsEnum, IsArray } from 'class-validator';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
-import { disputeReasonEnum, disputeStatusEnum, disputeResolutionEnum } from '../../../db/schema/disputes.schema';
+import { disputeReasonEnum, disputeStatusEnum, disputeResolutionEnum } from '../../../db/schema/disputes.schema.js';
 
 export class CreateDisputeDto {
     @ApiProperty()

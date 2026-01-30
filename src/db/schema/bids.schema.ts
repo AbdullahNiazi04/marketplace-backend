@@ -1,7 +1,7 @@
 import { sqliteTable, text, integer, real } from 'drizzle-orm/sqlite-core';
 import { sql } from 'drizzle-orm';
-import { auctions } from './auctions.schema';
-import { users } from './users.schema';
+import { auctions } from './auctions.schema.js';
+import { users } from './users.schema.js';
 
 export const bids = sqliteTable('bids', {
     bidId: text('bid_id').primaryKey().$defaultFn(() => crypto.randomUUID()),

@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException, ConflictException } from '@nestjs/common';
-import { UsersRepository } from './users.repository';
-import { CreateUserDto, UpdateUserDto } from './dto';
-import { User } from '../../db/schema';
+import { UsersRepository } from './users.repository.js';
+import { CreateUserDto, UpdateUserDto } from './dto/index.js';
+import { User } from '../../db/schema/index.js';
 import * as crypto from 'crypto';
 
 @Injectable()

@@ -1,6 +1,6 @@
 import { IsString, IsOptional, IsNumber, IsBoolean, IsEnum, Min } from 'class-validator';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
-import { shippingStatusEnum } from '../../../db/schema/shipping.schema';
+import { shippingStatusEnum } from '../../../db/schema/shipping.schema.js';
 
 export class CreateShippingDto {
     @ApiProperty()

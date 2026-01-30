@@ -1,5 +1,5 @@
 import { Controller, All, Req, Res } from '@nestjs/common';
-import { auth } from '../../lib/auth';
+import { auth } from '../../lib/auth.js';
 import { toNodeHandler } from 'better-auth/node';
 
 @Controller('api/auth')

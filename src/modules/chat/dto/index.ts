@@ -1,6 +1,6 @@
 import { IsString, IsOptional, IsEnum, IsArray, IsNumber, Min } from 'class-validator';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
-import { messageTypeEnum } from '../../../db/schema/messages.schema';
+import { messageTypeEnum } from '../../../db/schema/messages.schema.js';
 
 // ==================== Conversation DTOs ====================
 

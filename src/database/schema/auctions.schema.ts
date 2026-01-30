@@ -1,7 +1,7 @@
 import { pgTable, text, integer, doublePrecision, timestamp, uuid } from 'drizzle-orm/pg-core';
 import { sql } from 'drizzle-orm';
-import { listings } from './listings.schema';
-import { users } from './users.schema';
+import { listings } from './listings.schema.js';
+import { users } from './users.schema.js';
 
 // Auction status
 export const auctionStatusEnum = ['Scheduled', 'Active', 'Ended', 'Cancelled'] as const;

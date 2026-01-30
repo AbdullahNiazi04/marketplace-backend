@@ -1,7 +1,7 @@
 import { pgTable, text, boolean, doublePrecision, timestamp, jsonb, uuid } from 'drizzle-orm/pg-core';
 import { sql } from 'drizzle-orm';
-import { orders } from './orders.schema';
-import { orderItems } from './order-items.schema';
+import { orders } from './orders.schema.js';
+import { orderItems } from './order-items.schema.js';
 
 // Shipping status
 export const shippingStatusEnum = ['Pending', 'Shipped', 'InTransit', 'Delivered', 'Returned', 'Lost'] as const;

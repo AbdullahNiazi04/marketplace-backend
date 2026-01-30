@@ -1,6 +1,6 @@
 import { sqliteTable, text, integer, real } from 'drizzle-orm/sqlite-core';
 import { sql } from 'drizzle-orm';
-import { users } from './users.schema';
+import { users } from './users.schema.js';
 
 // Payout status
 export const payoutStatusEnum = ['Scheduled', 'Processing', 'Completed', 'Failed', 'Cancelled'] as const;

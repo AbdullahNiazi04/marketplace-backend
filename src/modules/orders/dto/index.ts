@@ -1,6 +1,6 @@
 import { IsString, IsOptional, IsEnum, IsNumber, IsArray, IsObject, Min } from 'class-validator';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
-import { orderTypeEnum, orderPaymentTermsEnum } from '../../../db/schema/orders.schema';
+import { orderTypeEnum, orderPaymentTermsEnum } from '../../../db/schema/orders.schema.js';
 
 export class CreateOrderDto {
     @ApiProperty()

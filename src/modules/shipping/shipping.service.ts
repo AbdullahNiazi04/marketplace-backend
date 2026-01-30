@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { ShippingRepository } from './shipping.repository';
-import { CreateShippingDto, UpdateShippingDto } from './dto';
-import { Shipping } from '../../db/schema';
+import { ShippingRepository } from './shipping.repository.js';
+import { CreateShippingDto, UpdateShippingDto } from './dto/index.js';
+import { Shipping } from '../../db/schema/index.js';
 
 @Injectable()
 export class ShippingService {

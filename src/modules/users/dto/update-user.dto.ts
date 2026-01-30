@@ -1,8 +1,8 @@
 import { PartialType } from '@nestjs/swagger';
-import { CreateUserDto } from './create-user.dto';
+import { CreateUserDto } from './create-user.dto.js';
 import { IsOptional, IsString, IsEnum, IsBoolean } from 'class-validator';
 import { ApiPropertyOptional } from '@nestjs/swagger';
-import { verificationStatusEnum } from '../../../db/schema/users.schema';
+import { verificationStatusEnum } from '../../../db/schema/users.schema.js';
 
 export class UpdateUserDto extends PartialType(CreateUserDto) {
     @ApiPropertyOptional()

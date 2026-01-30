@@ -1,7 +1,7 @@
 import { Injectable, Inject } from '@nestjs/common';
 import { eq, and, like, desc, sql } from 'drizzle-orm';
-import { DATABASE_CONNECTION } from '../../database/database.module';
-import { listings, Listing, NewListing } from '../../db/schema';
+import { DATABASE_CONNECTION } from '../../database/database.module.js';
+import { listings, Listing, NewListing } from '../../db/schema/index.js';
 
 @Injectable()
 export class ListingsRepository {

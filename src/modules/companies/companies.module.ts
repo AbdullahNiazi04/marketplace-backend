@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { CompaniesController } from './companies.controller';
-import { CompaniesService } from './companies.service';
-import { CompaniesRepository } from './companies.repository';
+import { CompaniesController } from './companies.controller.js';
+import { CompaniesService } from './companies.service.js';
+import { CompaniesRepository } from './companies.repository.js';
 
 @Module({
     controllers: [CompaniesController],

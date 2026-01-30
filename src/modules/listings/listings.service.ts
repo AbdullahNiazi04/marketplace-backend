@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
-import { ListingsRepository } from './listings.repository';
-import { CreateListingDto, UpdateListingDto } from './dto';
-import { Listing } from '../../db/schema';
+import { ListingsRepository } from './listings.repository.js';
+import { CreateListingDto, UpdateListingDto } from './dto/index.js';
+import { Listing } from '../../db/schema/index.js';
 
 @Injectable()
 export class ListingsService {

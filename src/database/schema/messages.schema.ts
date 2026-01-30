@@ -1,7 +1,7 @@
 import { pgTable, text, integer, boolean, timestamp, uuid } from 'drizzle-orm/pg-core';
 import { sql } from 'drizzle-orm';
-import { users } from './users.schema';
-import { conversations } from './conversations.schema';
+import { users } from './users.schema.js';
+import { conversations } from './conversations.schema.js';
 
 // Message type enum
 export const messageTypeEnum = ['Text', 'Image', 'File', 'System'] as const;

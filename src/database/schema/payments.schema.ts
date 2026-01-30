@@ -1,6 +1,6 @@
 import { pgTable, text, doublePrecision, timestamp, jsonb, uuid } from 'drizzle-orm/pg-core';
 import { sql } from 'drizzle-orm';
-import { orders } from './orders.schema';
+import { orders } from './orders.schema.js';
 
 // Escrow status
 export const escrowStatusEnum = ['Held', 'Released', 'Refunded', 'Disputed'] as const;

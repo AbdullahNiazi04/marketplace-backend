@@ -1,7 +1,7 @@
 import { sqliteTable, text, integer } from 'drizzle-orm/sqlite-core';
 import { v4 as uuidv4 } from 'uuid';
-import { users } from './users.schema';
-import { listings } from './listings.schema';
+import { users } from './users.schema.js';
+import { listings } from './listings.schema.js';
 
 // Conversation status enum
 export const conversationStatusEnum = ['Active', 'Archived', 'Blocked'] as const;

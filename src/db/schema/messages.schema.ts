@@ -1,7 +1,7 @@
 import { sqliteTable, text, integer } from 'drizzle-orm/sqlite-core';
 import { v4 as uuidv4 } from 'uuid';
-import { users } from './users.schema';
-import { conversations } from './conversations.schema';
+import { users } from './users.schema.js';
+import { conversations } from './conversations.schema.js';
 
 // Message type enum
 export const messageTypeEnum = ['Text', 'Image', 'File', 'System'] as const;

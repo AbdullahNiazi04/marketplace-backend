@@ -1,6 +1,6 @@
 import { IsEmail, IsString, IsOptional, IsEnum, MinLength, IsBoolean } from 'class-validator';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
-import { userTypeEnum, userRoleEnum } from '../../../db/schema/users.schema';
+import { userTypeEnum, userRoleEnum } from '../../../db/schema/users.schema.js';
 
 export class CreateUserDto {
     @ApiProperty({ example: 'john@example.com' })

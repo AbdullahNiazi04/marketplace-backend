@@ -1,8 +1,8 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, Query, HttpCode, HttpStatus, UseGuards } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiQuery } from '@nestjs/swagger';
-import { ListingsService } from './listings.service';
-import { CreateListingDto, UpdateListingDto } from './dto';
-import { RolesGuard, Roles, Public, UserSession } from '../../common';
+import { ListingsService } from './listings.service.js';
+import { CreateListingDto, UpdateListingDto } from './dto/index.js';
+import { RolesGuard, Roles, Public, UserSession } from '../../common/index.js';
 
 @ApiTags('Listings')
 @Controller('listings')

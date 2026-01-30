@@ -1,7 +1,7 @@
 import { pgTable, text, doublePrecision, timestamp, uuid } from 'drizzle-orm/pg-core';
 import { sql } from 'drizzle-orm';
-import { orders } from './orders.schema';
-import { users } from './users.schema';
+import { orders } from './orders.schema.js';
+import { users } from './users.schema.js';
 
 // Revenue ledger status
 export const revenueStatusEnum = ['Pending', 'Held', 'Processed', 'Cancelled'] as const;

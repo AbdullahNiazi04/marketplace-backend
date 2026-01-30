@@ -1,7 +1,7 @@
 import { Controller, Get, Post, Body, Patch, Param } from '@nestjs/common';
 import { ApiTags, ApiOperation } from '@nestjs/swagger';
-import { ShippingService } from './shipping.service';
-import { CreateShippingDto, UpdateShippingDto } from './dto';
+import { ShippingService } from './shipping.service.js';
+import { CreateShippingDto, UpdateShippingDto } from './dto/index.js';
 
 @ApiTags('Shipping')
 @Controller('shipping')

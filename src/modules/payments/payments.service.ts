@@ -1,8 +1,8 @@
 import { Injectable, NotFoundException, BadRequestException, Inject, forwardRef } from '@nestjs/common';
-import { PaymentsRepository } from './payments.repository';
-import { CreatePaymentDto, UpdatePaymentStatusDto } from './dto';
-import { Payment } from '../../db/schema';
-import { OrdersService } from '../orders/orders.service';
+import { PaymentsRepository } from './payments.repository.js';
+import { CreatePaymentDto, UpdatePaymentStatusDto } from './dto/index.js';
+import { Payment } from '../../db/schema/index.js';
+import { OrdersService } from '../orders/orders.service.js';
 
 @Injectable()
 export class PaymentsService {

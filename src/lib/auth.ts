@@ -2,7 +2,7 @@
 import { drizzle } from 'drizzle-orm/node-postgres';
 import * as pg from 'pg';
 const { Pool } = pg;
-import * as schema from '../db/schema';
+import * as schema from '../db/schema/index.js';
 
 // Create Postgres connection for Better Auth
 const pool = new Pool({
