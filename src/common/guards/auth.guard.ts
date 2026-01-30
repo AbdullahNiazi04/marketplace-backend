@@ -28,7 +28,8 @@ export class AuthGuard implements CanActivate {
          * Verify session using better-auth
          * We pass the request headers to let better-auth handle cookie parsing
          */
-        const session = await auth.api.getSession({
+        const authInstance = await auth;
+        const session = await authInstance.api.getSession({
             headers: request.headers,
         });
 
