@@ -13,6 +13,7 @@ import { ShippingModule } from './modules/shipping/shipping.module';
 import { DisputesModule } from './modules/disputes/disputes.module';
 import { ReviewsModule } from './modules/reviews/reviews.module';
 import { ChatModule } from './modules/chat/chat.module';
+import { AuthModule } from './modules/auth/auth.module';
 
 @Module({
   imports: [
@@ -31,6 +32,7 @@ import { ChatModule } from './modules/chat/chat.module';
     DisputesModule,
     ReviewsModule,
     ChatModule,
+    AuthModule,
   ],
   providers: [
     {

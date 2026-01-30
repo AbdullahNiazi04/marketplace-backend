@@ -22,6 +22,17 @@ export class AuthGuard implements CanActivate {
         }
 
         const request = context.switchToHttp().getRequest();
+        
+        // Whitelist Swagger UI and public paths
+        const path = request.path || request.url; // Handle various adapter inconsistencies
+        if (
+            path === '/' ||
+            path.startsWith('/api/') && !path.startsWith('/api/v1') || // Swagger assets
+            path === '/api'
+        ) {
+            return true;
+        }
+
         const response = context.switchToHttp().getResponse();
 
         /**
